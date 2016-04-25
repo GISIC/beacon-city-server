@@ -1,0 +1,29 @@
+
+
+
+    <div class="middle-box text-center loginscreen  animated fadeInDown">
+        <div>
+            <div>
+
+                <h1 class="logo-name">BC</h1>
+
+            </div>
+            <h3>Bienvenido a Beacon City</h3>
+            <p>
+                Esta plataforma es un prototipo que permite gestionar toda la información necesaria para el funcionamiento de la aplicación móvil Beacon City.
+            </p>
+            <p>Inicia sesión para administrar la plataforma.</p>
+            <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                <div class="form-group">
+                  <%= f.email_field :email, :class=> "form-control",:placeholder=>"Email",autofocus: true %>
+                </div>
+                <div class="form-group">
+                    <%= f.password_field :password, :class=> "form-control",:placeholder=>"Password" %>
+                </div>
+                <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
+                
+            <% end %>
+            <p class="m-t"> <small>Inspinia we app framework base on Bootstrap 3 &copy; 2015</small> </p>
+        </div>
+    </div>
+
